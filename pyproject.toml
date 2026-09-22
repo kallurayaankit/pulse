@@ -1,0 +1,26 @@
+[project]
+name = "pulse"
+version = "0.1.0"
+description = "Continuous test-suite health monitor - find flaky, duplicate, and low-value tests"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ankit Kalluraya" }]
+dependencies = ["pyyaml", "python-dotenv", "pytest"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+pulse = "pulse.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
