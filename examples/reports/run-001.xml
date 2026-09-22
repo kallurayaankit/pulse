@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite name="suite">
+    <testcase name="test_login_success" classname="tests.test_auth" time="0.5"/>
+    <testcase name="test_login_wrong_password" classname="tests.test_auth" time="0.5"/>
+    <testcase name="test_login_lockout" classname="tests.test_auth" time="0.5"/>
+    <testcase name="test_session_expiry" classname="tests.test_auth" time="0.5"><failure message="boom">AssertionError</failure></testcase>
+    <testcase name="test_signup_valid" classname="tests.test_signup" time="0.5"/>
+    <testcase name="test_signup_duplicate_email" classname="tests.test_signup" time="0.5"/>
+    <testcase name="test_signup_weak_password" classname="tests.test_signup" time="0.5"/>
+    <testcase name="test_password_reset_email" classname="tests.test_password" time="0.5"/>
+    <testcase name="test_password_reset_token" classname="tests.test_password" time="0.5"/>
+    <testcase name="test_profile_update" classname="tests.test_profile" time="0.5"/>
+    <testcase name="test_profile_delete" classname="tests.test_profile" time="0.5"/>
+    <testcase name="test_health_check" classname="tests.test_health" time="0.5"/>
+  </testsuite>
+</testsuites>
